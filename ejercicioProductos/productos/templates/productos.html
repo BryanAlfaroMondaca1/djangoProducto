@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="productos-container">
+        <h1>Productos</h1>
+        <ul>
+            {% for categoria, productos_lista in categorias.items %}
+                <li>
+                    <h2>{{ categoria }}</h2>
+                    <ul>
+                        {% for producto in productos_lista %}
+                            <li>{{ producto }}</li>
+                        {% endfor %}
+                    </ul>
+                    <img src="{% static 'images/rukia.jpg' %}" alt="Imagen de {{ categoria }}" class="category-image">
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="{% url 'index' %}">Volver al índice</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+/* Reset básico */
+body, h1, h2, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #555;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #1e90ff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el índice */
+.index-container {
+    margin-bottom: 20px;
+}
+
+.index-container h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.index-container ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.index-container li {
+    margin-bottom: 10px;
+}
+
+.index-container .categories {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.index-container .categories li a {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Estilo para la vista de productos */
+.productos-container {
+    margin-top: 20px;
+}
+
+.productos-container h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.productos-container ul {
+    padding: 0;
+}
+
+.productos-container li {
+    margin-bottom: 20px;
+}
+
+.productos-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.productos-container ul ul {
+    padding-left: 20px;
+}
+
+.productos-container img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Estilo específico para imágenes debajo de cada categoría */
+/* Estilo específico para imágenes debajo de cada categoría */
+.category-image {
+    width: 80px; /* Ajusta este valor según el tamaño deseado */
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+
